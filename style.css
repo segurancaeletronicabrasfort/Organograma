@@ -60,7 +60,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;   /* Aumentei um pouco para caber melhor */
+    width: 45px;   /* Aumentei um pouco para caber melhor */
     height: 45px;
     border-radius: 8px;
     transition: background-color 0.2s ease, transform 0.2s;
