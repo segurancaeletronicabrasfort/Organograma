@@ -64,7 +64,7 @@ body {
     height: 45px;
     border-radius: 8px;
     transition: background-color 0.2s ease, transform 0.2s;
-    padding: 1px; /* Espaço interno para a logo não encostar na borda cinza ao passar o mouse */
+    padding: 0px; /* Espaço interno para a logo não encostar na borda cinza ao passar o mouse */
 }
 
 .header-logo-right:hover {
