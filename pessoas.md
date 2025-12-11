@@ -1,5 +1,5 @@
-<img width="409" height="409" alt="Fabricio" src="https://github.com/user-attachments/assets/2653f2d7-34db-4fc9-ad60-170cd3580b13" />Adriel
-<img width="409" height="409" alt="Adriel" src="https://github.com/user-attachments/assets/8633ae12-7b14-4f40-8937-477806afc21c" />
+Adriel
+<img width="409" height="409" alt="Adriel" src="https://github.com/user-attachments/assets/11c70c12-c8ed-4348-a3e4-efd93770b838" />
 Atila
 <img width="409" height="409" alt="Atila" src="https://github.com/user-attachments/assets/2e4c3c8c-9729-4a5d-b95d-34a59a017f5a" />
 Caua
