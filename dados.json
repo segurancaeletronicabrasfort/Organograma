@@ -1,0 +1,85 @@
+{
+    "cargo": "Gerência",
+    "nomes": [{ "nome": "Glenda Negreiros", "email": "glenda@brasfort.com", "foto": "img/glenda.jpg" }],
+    "nivel": 1,
+    "filhos": [
+        {
+            "cargo": "Coordenação",
+            "nomes": [{ "nome": "Luciano Nascimento", "email": "luciano@brasfort.com" }],
+            "nivel": 2,
+            "filhos": [
+                {
+                    "cargo": "Administrativo",
+                    "nomes": [{ "nome": "Quely Ferreira" }],
+                    "nivel": 3,
+                    "filhos": [
+                        {
+                            "cargo": "Jovem Aprendiz",
+                            "nomes": [
+                                "Isack Almeida", 
+                                "Davi Gadiolli", 
+                                "Guilherme Alexandre", 
+                                "Lucas Sales"
+                            ],
+                            "nivel": 5,
+                            "filhos": []
+                        }
+                    ]
+                },
+                {
+                    "cargo": "Técnico de Suporte",
+                    "nomes": [{ "nome": "Rayssen Leonardo", "matricula": "102030" }],
+                    "nivel": 3,
+                    "filhos": [
+                        {
+                            "cargo": "Técnico de Suporte",
+                            "nomes": [
+                                { 
+                                    "nome": "Danilo Vinícius", 
+                                    "matricula": "001234",
+                                    "email": "danilo.vinicius@brasfort.com",
+                                    "telefone": "(61) 99999-9999",
+                                    "idade": "26 anos",
+                                    "admissao": "10/03/2025"
+                                }
+                            ],
+                            "nivel": 4,
+                            "filhos": [
+                                {
+                                    "cargo": "Op. Monitoramento",
+                                    "layout": "vertical",
+                                    "nomes": ["Adriel Rodrigues", "Fabricio Forte", "Luiz Tavares", "David Alves"],
+                                    "nivel": 5,
+                                    "filhos": []
+                                }
+                            ]
+                        },
+                        {
+                            "cargo": "Técnico de Suporte",
+                            "nomes": [{ "nome": "Quedma Paula" }],
+                            "nivel": 4,
+                            "filhos": []
+                        }
+                    ]
+                },
+                {
+                    "cargo": "Técnico de Seg. Eletrônica",
+                    "nomes": ["Silvano Souza", "Thiago Alves"],
+                    "nivel": 3,
+                    "filhos": [
+                        {
+                            "cargo": "Auxiliar Técnico",
+                            "layout": "vertical",
+                            "nomes": [
+                                "Lucas Matos", "Eduardo Gonçalves", "Cauã Carvalho",
+                                "Atila Gabriel (Interm.)", "Matheus Guerra (Interm.)", "Vinicius Borges (Interm.)"
+                            ],
+                            "nivel": 4,
+                            "filhos": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
