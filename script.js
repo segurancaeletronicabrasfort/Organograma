@@ -5,7 +5,7 @@ const orgData = {
     {
       nome: "Glenda Negreiros",
       email: "glenda@brasfort.com.br",
-      foto: "https://i.postimg.cc/26HzB31m/Captura-de-tela-2025-03-08-160224.png",
+      foto: "https://github.com/user-attachments/assets/5ecca86d-dd31-4f36-9cd2-d601f56ebba8",
       descricao:
         "<br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     }
@@ -18,7 +18,7 @@ const orgData = {
         {
           nome: "Luciano Nascimento",
           matricula: "21467",
-          foto: "https://i.postimg.cc/CL74ngNc/luciano.png",
+          foto: "https://github.com/user-attachments/assets/98982e04-790a-4fd7-be29-29217af7ca32",
           email: "luciano.nascimento@brasfort.com.br",
           telefone: "(61)98358-5726",
           nascimento: "09-07-1984",
@@ -35,7 +35,7 @@ const orgData = {
             {
               nome: "Quely Ferreira",
               matricula: "28091",
-              foto: "https://i.postimg.cc/j20rfNRH/Captura-de-tela-2024-08-16-171432.png",
+              foto: "https://github.com/user-attachments/assets/17bfd145-243e-48d5-8073-099a22277204",
               email: "quely.ferreira@brasfort.com.br",
               telefone: "(61)985631537",
               nascimento: "09-05-1972",
@@ -51,7 +51,7 @@ const orgData = {
               nomes: [
                 {
                   nome: "Isack Aragão",
-                  foto: "https://i.postimg.cc/8cKqTnZM/Captura-de-tela-2025-09-24-100304.png",
+                  foto: "https://github.com/user-attachments/assets/1b7764bc-ae95-4c67-94cc-c1975f46728c",
                   matricula: "001234",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 99999-9999",
@@ -63,7 +63,7 @@ const orgData = {
                 {
                   nome: "Davi Gadioli",
                   matricula: "001234",
-                  foto: "https://i.postimg.cc/s2dbfW4J/Captura-de-tela-2025-12-09-105253.png",
+                  foto: "https://github.com/user-attachments/assets/0c105ea1-3fe7-44b5-8ead-b53247698363",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 99999-9999",
                   nascimento: "26 anos",
@@ -75,7 +75,7 @@ const orgData = {
                   nome: "Guilherme Alexandre",
                   matricula: "001234",
                   email: "danilo.vinicius@brasfort.com",
-                  foto: "https://i.postimg.cc/brKygJ1X/imagem-2025-12-10-121835634.png",
+                  foto: "https://github.com/user-attachments/assets/8593b0fc-76d4-436d-abfc-8fefa5b96a07",
                   telefone: "(61) 99999-9999",
                   nascimento: "26 anos",
                   admissao: "10/03/2025",
@@ -85,7 +85,7 @@ const orgData = {
                 {
                   nome: "Lucas Sales",
                   matricula: "001234",
-                  foto: "https://i.postimg.cc/wM7wQxkh/Captura-de-tela-2025-12-09-105828.png",
+                  foto: "https://github.com/user-attachments/assets/75b5cd83-0968-4051-b758-255d0a39fbdf",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 99999-9999",
                   nascimento: "26 anos",
@@ -105,7 +105,7 @@ const orgData = {
             {
               nome: "Rayssen Leonardo",
               matricula: "29974",
-              foto: "https://i.postimg.cc/qvBCP62R/foto-e-perfil.jpg",
+              foto: "https://github.com/user-attachments/assets/16eef1a3-8f46-4fc8-8b9c-055d4f054fb5",
               email: "rayssen.braga@brasfort.com",
               telefone: "(61) 99581-9374",
               nascimento: "06-05-2003",
@@ -121,7 +121,7 @@ const orgData = {
               nomes: [
                 {
                   nome: "Danilo Vinícius",
-                  foto: "https://i.postimg.cc/1zpqqxhc/Captura-de-tela-2025-09-11-120003.png",
+                  foto: "https://github.com/user-attachments/assets/96e7e204-d6c9-494c-8dbf-46b8f7fbdb9c",
                   matricula: "52029",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 98485-3715",
@@ -133,7 +133,7 @@ const orgData = {
                 {
                   nome: "Quedma Paula",
                   matricula: "001234",
-                  foto: "https://i.postimg.cc/QNwmr3b4/Captura-de-tela-2025-09-24-135256.png",
+                  foto: "https://github.com/user-attachments/assets/da33e098-642f-4783-865b-5563594176fb",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 99999-9999",
                   nascimento: "",
@@ -151,7 +151,7 @@ const orgData = {
                     {
                       nome: "Adriel Rego",
                       matricula: "001234",
-                      foto: "https://i.postimg.cc/5ts08srk/Captura-de-tela-2025-09-24-082045.png",
+                      foto: "https://github.com/user-attachments/assets/11c70c12-c8ed-4348-a3e4-efd93770b838",
                       email: "danilo.vinicius@brasfort.com",
                       telefone: "(61) 99999-9999",
                       nascimento: "26 anos",
@@ -162,7 +162,7 @@ const orgData = {
                     {
                       nome: "Luis Gabriel",
                       matricula: "001234",
-                      foto: "https://i.postimg.cc/q7q6RtBN/Captura-de-tela-2025-09-24-103937.png",
+                      foto: "https://github.com/user-attachments/assets/c067ede5-5d77-4317-b58a-ed03349e5793",
                       email: "danilo.vinicius@brasfort.com",
                       telefone: "(61) 99999-9999",
                       nascimento: "26 anos",
@@ -173,7 +173,7 @@ const orgData = {
                     {
                       nome: "David Alves",
                       matricula: "001234",
-                      foto: "https://i.postimg.cc/k5Y8FQYZ/Captura-de-tela-2025-09-24-104731.png",
+                      foto: "https://github.com/user-attachments/assets/7763c7c1-2630-45ed-879e-863e66c854f4",
                       email: "danilo.vinicius@brasfort.com",
                       telefone: "(61) 99999-9999",
                       nascimento: "26 anos",
@@ -184,7 +184,7 @@ const orgData = {
                     {
                       nome: "Fabricio Forte",
                       matricula: "001234",
-                      foto: "https://i.postimg.cc/mDcdQ2j7/Captura-de-tela-2025-09-24-105002.png",
+                      foto: "https://github.com/user-attachments/assets/952337c8-42b4-4436-ae4a-f5d08cd9e33f",
                       email: "danilo.vinicius@brasfort.com",
                       telefone: "(61) 99999-9999",
                       nascimento: "26 anos",
@@ -206,7 +206,7 @@ const orgData = {
             {
               nome: "Silvano Rodrigues",
               matricula: "27579",
-              foto: "https://i.postimg.cc/x8qSNbp6/imagem-2025-12-10-131917163.png",
+              foto: "https://github.com/user-attachments/assets/e3924039-fd1d-4056-a6f7-9e9b8d52a179",
               email: "silvano.souza@brasfort.com",
               telefone: "(61) 99666-2715",
               nascimento: "06-04-2003",
@@ -217,7 +217,7 @@ const orgData = {
             {
               nome: "Thiago Alves",
               matricula: "53211",
-              foto: "https://i.postimg.cc/y6y1M1Bp/Captura-de-tela-2025-12-09-112817.png",
+              foto: "https://github.com/user-attachments/assets/3cfeee29-c8b6-470f-8ae0-2088fcd0febb",
               email: "naotem@brasfort.com",
               telefone: "(61) 99903-7261",
               nascimento: "29-07-1985",
@@ -235,7 +235,7 @@ const orgData = {
                 {
                   nome: "Lucas Matos",
                   matricula: "001234",
-                  foto: "https://i.postimg.cc/4N89Tbsk/Captura-de-tela-2025-03-08-163404.png",
+                  foto: "https://github.com/user-attachments/assets/e6d656dd-b400-4ab4-bf6f-55b2986aa197",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 99999-9999",
                   nascimento: "26 anos",
@@ -246,7 +246,7 @@ const orgData = {
                 {
                   nome: "Eduardo Gonçalves",
                   matricula: "52031",
-                  foto: "https://i.postimg.cc/MGn4YDZ4/3562938SCC-(1).jpg",
+                  foto: "https://github.com/user-attachments/assets/337621a5-614f-454c-9409-90fd0e5bd964",
                   email:"eduardo.goncalves@brasfort.com",
                   telefone: "(61) 98143-6487",
                   nascimento: "08-04-2003",
@@ -257,7 +257,7 @@ const orgData = {
                 {
                   nome: "Cauã Carvalho",
                   matricula: "53176",
-                  foto: "https://i.postimg.cc/wxZC4nsH/Captura-de-tela-2025-12-09-105959.png",
+                  foto: "https://github.com/user-attachments/assets/1f9adacc-43fc-489c-ab89-5dfe2416c35e",
                   email: "caua.oliveira@brasfort.com.br",
                   telefone: "(61) 98214-8361",
                   nascimento: "16-10-2003",
@@ -275,7 +275,7 @@ const orgData = {
                     {
                   nome: "Atila Gabriel",
                   matricula: "001234",
-                  foto: "https://i.postimg.cc/mk5CVb54/Captura-de-tela-2025-05-05-071315.png",
+                  foto: "https://github.com/user-attachments/assets/11c70c12-c8ed-4348-a3e4-efd93770b838",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 99999-9999",
                   nascimento: "26 anos",
@@ -285,7 +285,7 @@ const orgData = {
                     {
                       nome: "Matheus Guerra",
                       matricula: "001234",
-                      foto: "https://i.postimg.cc/GttbPDNt/4023057-cc489360-ccf9-47d4-ae6d-2fb841277bc9.png",
+                      foto: "https://github.com/user-attachments/assets/1e911aef-c71e-4a84-a844-a739bbd5c6c5",
                       email: "danilo.vinicius@brasfort.com",
                       telefone: "(61) 99999-9999",
                       nascimento: "26 anos",
@@ -295,7 +295,7 @@ const orgData = {
                     {
                       nome: "Vinicius Borges",
                       matricula: "001234",
-                      foto: "https://i.postimg.cc/2513YPTk/Captura-de-tela-2025-09-24-102312.png",
+                      foto: "https://github.com/user-attachments/assets/e9038a7d-dccb-4025-a41b-fd29594982e3",
                       email: "danilo.vinicius@brasfort.com",
                       telefone: "(61) 99999-9999",
                       nascimento: "26 anos",
