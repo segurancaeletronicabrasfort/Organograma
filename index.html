@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organograma Modal</title>
+    <title>Organograma Oficial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="main-header">
+    <div id="splash-screen">
+        <img src="https://github.com/user-attachments/assets/fb03c30a-d16a-4f23-980d-ca650748c93d" alt="Carregando...">
+    </div>
+
+    <header class="main-header">
         <div class="header-brand">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1976d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="9" y="3" width="6" height="6"></rect>
@@ -21,28 +25,25 @@
             <h1>Organograma Oficial</h1>
         </div>
         
-        <a href="https://www.brasfort.com.br/" target="_blank" class="header-logo-right" title="Acessar Link">
-            <img src="https://github.com/user-attachments/assets/c2b36556-9dd9-4d64-9107-f5c742b1bb84" alt="Logo da Empresa">
+        <a href="https://www.brasfort.com.br" target="_blank" class="header-logo-right" title="Acessar Link">
+            <img src="https://github.com/user-attachments/assets/c2b36556-9dd9-4d64-9107-f5c742b1bb84" alt="Logo">
         </a>
     </header>
-  
-    <div id="org-container" class="org-chart"></div>
+
+    <main>
+        <div id="org-container" class="org-chart"></div>
+    </main>
 
     <div id="profile-modal" class="modal-overlay">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            
             <div class="modal-header">
-                <div id="modal-avatar" class="modal-avatar">DV</div>
-                <h2 id="modal-name">Danilo Vinícius</h2>
-                <div id="modal-role" class="modal-role-tag">Téc. Suporte</div>
+                <div id="modal-avatar" class="modal-avatar"></div>
+                <h2 id="modal-name"></h2>
+                <div id="modal-role" class="modal-role-tag"></div>
             </div>
-
             <div class="modal-divider"></div>
-
-            <div id="modal-body" class="modal-body">
-                <p>Informações de contato...</p>
-            </div>
+            <div id="modal-body" class="modal-body"></div>
         </div>
     </div>
 
