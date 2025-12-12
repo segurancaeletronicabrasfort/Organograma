@@ -53,9 +53,9 @@ const orgData = {
                   nome: "Isack Aragão",
                   foto: "https://github.com/user-attachments/assets/1b7764bc-ae95-4c67-94cc-c1975f46728c",
                   matricula: "52698",
-                  email: "danilo.vinicius@brasfort.com",
-                  telefone: "(61) 99999-9999",
-                  nascimento: "14-09-1999",
+                  email: "isack.aragao@brasfort.com.br",
+                  telefone: "(61) 99452-0714",
+                  nascimento: "28-08-2008",
                   admissao: "03/2025",
                   descricao:
                     "<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -64,21 +64,21 @@ const orgData = {
                   nome: "Davi Gadioli",
                   matricula: "53085",
                   foto: "https://github.com/user-attachments/assets/0c105ea1-3fe7-44b5-8ead-b53247698363",
-                  email: "danilo.vinicius@brasfort.com",
-                  telefone: "(61) 99999-9999",
-                  nascimento: "26 anos",
-                  admissao: "10/03/2025",
+                  email: "davi.gadioli@brasfort.com.br",
+                  telefone: "(61) 98655-8705",
+                  nascimento: "29-07-2008",
+                  admissao: "06/2025",
                   descricao:
                     "<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                 },
                 {
                   nome: "Guilherme Alexandre",
                   matricula: "53097",
-                  email: "danilo.vinicius@brasfort.com",
+                  email: "guilherme.alexandre@brasfort.com.br",
                   foto: "https://github.com/user-attachments/assets/8593b0fc-76d4-436d-abfc-8fefa5b96a07",
-                  telefone: "(61) 99999-9999",
-                  nascimento: "26 anos",
-                  admissao: "10/03/2025",
+                  telefone: "(61) 99125-3726",
+                  nascimento: "02-03-2008",
+                  admissao: "09/2025",
                   descricao:
                     "<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                 },
@@ -86,10 +86,10 @@ const orgData = {
                   nome: "Lucas Sales",
                   matricula: "53281",
                   foto: "https://github.com/user-attachments/assets/75b5cd83-0968-4051-b758-255d0a39fbdf",
-                  email: "danilo.vinicius@brasfort.com",
-                  telefone: "(61) 99999-9999",
-                  nascimento: "26 anos",
-                  admissao: "10/03/2025",
+                  email: "lucas.sales@brasfort.com.br",
+                  telefone: "(61) 99992-9582",
+                  nascimento: "26-03-2008",
+                  admissao: "11/2025",
                   descricao:
                     "<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                 }
@@ -106,7 +106,7 @@ const orgData = {
               nome: "Rayssen Leonardo",
               matricula: "29974",
               foto: "https://github.com/user-attachments/assets/16eef1a3-8f46-4fc8-8b9c-055d4f054fb5",
-              email: "rayssen.braga@brasfort.com",
+              email: "rayssen.braga@brasfort.com.br",
               telefone: "(61) 99581-9374",
               nascimento: "06-05-2003",
               admissao: "03/2024",
@@ -123,7 +123,7 @@ const orgData = {
                   nome: "Danilo Vinícius",
                   foto: "https://github.com/user-attachments/assets/96e7e204-d6c9-494c-8dbf-46b8f7fbdb9c",
                   matricula: "52029",
-                  email: "danilo.vinicius@brasfort.com",
+                  email: "danilo.vinicius@brasfort.com.br",
                   telefone: "(61) 98485-3715",
                   nascimento: "14-09-1999",
                   admissao: "03/2025",
@@ -134,10 +134,10 @@ const orgData = {
                   nome: "Quedma Paula",
                   matricula: "40312",
                   foto: "https://github.com/user-attachments/assets/da33e098-642f-4783-865b-5563594176fb",
-                  email: "danilo.vinicius@brasfort.com",
-                  telefone: "(61) 99999-9999",
-                  nascimento: "",
-                  admissao: "10/03/2025",
+                  email: "quedma.paulo@brasfort.com.br",
+                  telefone: "(61) 98664-6162",
+                  nascimento: "12-04-1993",
+                  admissao: "05/2025",
                   descricao:
                     "<br>Responsável por atendimentos técnicos remotos e presenciais, identificando e corrigindo falhas em sistemas de segurança eletrônica. Atua de forma analítica, orientando usuários, elaborando relatórios e apoiando projetos, garantindo disponibilidade e desempenho dos sistemas."
                 }
@@ -152,21 +152,21 @@ const orgData = {
                       nome: "Adriel Rego",
                       matricula: "50275",
                       foto: "https://github.com/user-attachments/assets/11c70c12-c8ed-4348-a3e4-efd93770b838",
-                      email: "danilo.vinicius@brasfort.com",
-                      telefone: "(61) 99999-9999",
-                      nascimento: "26 anos",
-                      admissao: "10/03/2025",
+                      email: "adriel.rego@brasfort.com.br",
+                      telefone: "(61) 98131-7967",
+                      nascimento: "29-11-1998",
+                      admissao: "07/2024",
                       descricao:
                         "<br>Responsável pelo monitoramento remoto de sistemas de segurança eletrônica, atendendo ocorrências, executando rondas virtuais, checklists e prestando suporte técnico e administrativo. Atua como ponto central na detecção de incidentes e resposta rápida a riscos."
                     },
                     {
-                      nome: "Luis Gabriel",
+                      nome: "Luiz Gabriel",
                       matricula: "52290",
                       foto: "https://github.com/user-attachments/assets/c067ede5-5d77-4317-b58a-ed03349e5793",
-                      email: "danilo.vinicius@brasfort.com",
-                      telefone: "(61) 99999-9999",
-                      nascimento: "26 anos",
-                      admissao: "10/03/2025",
+                      email: "luiz.tavares@brasfort.com.br",
+                      telefone: "(61) 98601-7126",
+                      nascimento: "01-05-2001",
+                      admissao: "04/2025",
                       descricao:
                         "<br>Responsável pelo monitoramento remoto de sistemas de segurança eletrônica, atendendo ocorrências, executando rondas virtuais, checklists e prestando suporte técnico e administrativo. Atua como ponto central na detecção de incidentes e resposta rápida a riscos."
                     },
@@ -174,21 +174,21 @@ const orgData = {
                       nome: "David Alves",
                       matricula: "52102",
                       foto: "https://github.com/user-attachments/assets/7763c7c1-2630-45ed-879e-863e66c854f4",
-                      email: "danilo.vinicius@brasfort.com",
-                      telefone: "(61) 99999-9999",
-                      nascimento: "26 anos",
-                      admissao: "10/03/2025",
+                      email: "danilo.vinicius@brasfort.com.br",
+                      telefone: "(61) 99875-5738",
+                      nascimento: "14-07-1997",
+                      admissao: "08/2024",
                       descricao:
-                        "<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        "<br>Responsável pelo monitoramento remoto de sistemas de segurança eletrônica, atendendo ocorrências, executando rondas virtuais, checklists e prestando suporte técnico e administrativo. Atua como ponto central na detecção de incidentes e resposta rápida a riscos."
                     },
                     {
                       nome: "Fabricio Forte",
                       matricula: "52702",
                       foto: "https://github.com/user-attachments/assets/952337c8-42b4-4436-ae4a-f5d08cd9e33f",
-                      email: "danilo.vinicius@brasfort.com",
-                      telefone: "(61) 99999-9999",
-                      nascimento: "26 anos",
-                      admissao: "10/03/2025",
+                      email: "danilo.vinicius@brasfort.com.br",
+                      telefone: "(61) 99585-7316",
+                      nascimento: "16-11-1996",
+                      admissao: "08/2025",
                       descricao:
                         "<br>Responsável pelo monitoramento remoto de sistemas de segurança eletrônica, atendendo ocorrências, executando rondas virtuais, checklists e prestando suporte técnico e administrativo. Atua como ponto central na detecção de incidentes e resposta rápida a riscos."
                     }
@@ -207,7 +207,7 @@ const orgData = {
               nome: "Silvano Rodrigues",
               matricula: "27579",
               foto: "https://github.com/user-attachments/assets/e3924039-fd1d-4056-a6f7-9e9b8d52a179",
-              email: "silvano.souza@brasfort.com",
+              email: "silvano.souza@brasfort.com.br",
               telefone: "(61) 99666-2715",
               nascimento: "06-04-2003",
               admissao: "02/2021",
@@ -218,7 +218,7 @@ const orgData = {
               nome: "Thiago Alves",
               matricula: "53211",
               foto: "https://github.com/user-attachments/assets/3cfeee29-c8b6-470f-8ae0-2088fcd0febb",
-              email: "naotem@brasfort.com",
+              email: "thiago.alves@brasfort.com.br",
               telefone: "(61) 99903-7261",
               nascimento: "29-07-1985",
               admissao: "10/2025",
@@ -236,10 +236,10 @@ const orgData = {
                   nome: "Lucas Matos",
                   matricula: "29109",
                   foto: "https://github.com/user-attachments/assets/e6d656dd-b400-4ab4-bf6f-55b2986aa197",
-                  email: "danilo.vinicius@brasfort.com",
-                  telefone: "(61) 99999-9999",
-                  nascimento: "26 anos",
-                  admissao: "10/03/2025",
+                  email: "lucas.matos@brasfort.com",
+                  telefone: "(61) 99858-7246",
+                  nascimento: "26-09-2003",
+                  admissao: "10/03/2023",
                   descricao:
                     "<br>Responsável por oferecer suporte administrativo às operações do setor de segurança eletrônica, organizando documentos, acompanhando ordens de serviço, auxiliando na gestão de estoque técnico e prestando atendimento aos clientes e à equipe de campo, com foco em agilidade, organização e conformidade."
                 },
@@ -276,9 +276,9 @@ const orgData = {
                   nome: "Atila Gabriel",
                   matricula: "52191",
                   foto: "https://github.com/user-attachments/assets/2e4c3c8c-9729-4a5d-b95d-34a59a017f5a",
-                  email: "danilo.vinicius@brasfort.com",
-                  telefone: "(61) 99999-9999",
-                  nascimento: "26 anos",
+                  email: "atila.oliveira@brasfort.com.br",
+                  telefone: "(61) 98130-3575",
+                  nascimento: "15-08-2024",
                   descricao:
                     "<br>Responsável por oferecer suporte administrativo às operações do setor de segurança eletrônica, organizando documentos, acompanhando ordens de serviço, auxiliando na gestão de estoque técnico e prestando atendimento aos clientes e à equipe de campo, com foco em agilidade, organização e conformidade."
                 }, 
@@ -287,8 +287,8 @@ const orgData = {
                       matricula: "52597",
                       foto: "https://github.com/user-attachments/assets/1e911aef-c71e-4a84-a844-a739bbd5c6c5",
                       email: "danilo.vinicius@brasfort.com",
-                      telefone: "(61) 99999-9999",
-                      nascimento: "26 anos",
+                      telefone: "(61) 98145-4582",
+                      nascimento: "26-11-2003",
                       descricao:
                         "<br>Responsável por oferecer suporte administrativo às operações do setor de segurança eletrônica, organizando documentos, acompanhando ordens de serviço, auxiliando na gestão de estoque técnico e prestando atendimento aos clientes e à equipe de campo, com foco em agilidade, organização e conformidade."
                     },
@@ -296,9 +296,9 @@ const orgData = {
                       nome: "Vinicius Borges",
                       matricula: "52944",
                       foto: "https://github.com/user-attachments/assets/e9038a7d-dccb-4025-a41b-fd29594982e3",
-                      email: "danilo.vinicius@brasfort.com",
-                      telefone: "(61) 99999-9999",
-                      nascimento: "26 anos",
+                      email: "vinicius.borges@brasfort.com",
+                      telefone: "(61) 99848-7550",
+                      nascimento: "02-06-1998",
                       descricao:
                         "<br>Responsável por oferecer suporte administrativo às operações do setor de segurança eletrônica, organizando documentos, acompanhando ordens de serviço, auxiliando na gestão de estoque técnico e prestando atendimento aos clientes e à equipe de campo, com foco em agilidade, organização e conformidade."
                     }
