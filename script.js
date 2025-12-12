@@ -162,7 +162,7 @@ const orgData = {
                     {
                       nome: "Luiz Gabriel",
                       matricula: "52290",
-                      foto: "https://github.com/user-attachments/assets/c067ede5-5d77-4317-b58a-ed03349e5793",
+                      foto: "https://github.com/user-attachments/assets/774cdc60-9407-49a2-963d-c96971cd0c26",
                       email: "luiz.tavares@brasfort.com.br",
                       telefone: "(61) 98601-7126",
                       nascimento: "01-05-2001",
