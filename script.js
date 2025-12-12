@@ -336,45 +336,70 @@ const modalName = document.getElementById('modal-name');
 const modalRole = document.getElementById('modal-role');
 const modalBody = document.getElementById('modal-body');
 
+
 function openModal(pessoaDados, cargoTitulo) {
     // 1. Limpa dados anteriores
     modalBody.innerHTML = '';
     modalAvatar.innerHTML = '';
 
-    // 2. Preenche Cabeçalho
-    modalName.innerText = pessoaDados.nome;
-    modalRole.innerText = cargoTitulo;
+    // 2. Cabeçalho
+    modalName.innerText = pessoaDados.nome || '';
 
-    // 3. Preenche Avatar (Foto ou Iniciais)
+    const cargoFinal = pessoaDados.cargo || cargoTitulo || '';
+    modalRole.innerText = cargoFinal;
+
+    // 3. Avatar (foto ou iniciais)
     if (pessoaDados.foto) {
         const img = document.createElement('img');
         img.src = pessoaDados.foto;
-        img.onerror = () => { modalAvatar.innerText = getInitials(pessoaDados.nome); };
+        img.onerror = () => { 
+            modalAvatar.innerText = getInitials(pessoaDados.nome); 
+        };
         modalAvatar.appendChild(img);
     } else {
         modalAvatar.innerText = getInitials(pessoaDados.nome);
     }
 
     // 4. Preenche Corpo (Informações extras)
-    // Lista de campos que queremos exibir se existirem
     const campos = [
         { key: 'matricula', label: 'Matrícula' },
-        { key: 'email', label: 'E-mail' },
+        { key: 'email',    label: 'E-mail' },
         { key: 'telefone', label: 'Telefone' },
         { key: 'nascimento', label: 'Data de Nascimento' },
-        { key: 'admissao', label: 'Data de Admissão' },
-         { key: 'descricao', label: 'Descrição' }
+        { key: 'admissao',   label: 'Data de Admissão' },
+        { key: 'descricao',  label: 'Descrição' }
     ];
 
     let hasInfo = false;
+
     campos.forEach(campo => {
-        if (pessoaDados[campo.key]) {
-            hasInfo = true;
-            const row = document.createElement('div');
-            row.className = 'info-row';
-            row.innerHTML = `<span class="info-label">${campo.label}</span> <span class="info-value">${pessoaDados[campo.key]}</span>`;
-            modalBody.appendChild(row);
+        const valor = pessoaDados[campo.key];
+        if (!valor) return;
+
+        hasInfo = true;
+        const row = document.createElement('div');
+        row.className = 'info-row';
+
+        if (campo.key === 'descricao') {
+            // Linha especial para DESCRIÇÃO (parágrafo justificado)
+            row.classList.add('info-row-descricao');
+
+            // Remove <br> inicial se existir (opcional)
+            const textoDescricao = String(valor).replace(/^<br\s*\/?>/i, '');
+
+            row.innerHTML = `
+                <span class="info-label">${campo.label}</span>
+                <p class="info-value descricao-text">${textoDescricao}</p>
+            `;
+        } else {
+            // Demais campos (matrícula, e-mail, etc.)
+            row.innerHTML = `
+                <span class="info-label">${campo.label}</span>
+                <span class="info-value">${valor}</span>
+            `;
         }
+
+        modalBody.appendChild(row);
     });
 
     if (!hasInfo) {
