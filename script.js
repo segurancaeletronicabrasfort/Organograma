@@ -252,7 +252,7 @@ const orgData = {
                   nascimento: "08-04-2003",
                   admissao: "03/2025",
                   descricao:
-                    "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua.."
+                    "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua."
                 },
                 {
                   nome: "Cauã Carvalho",
@@ -263,7 +263,7 @@ const orgData = {
                   nascimento: "16-10-2003",
                   admissao: "10/2025",
                   descricao:
-                    "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua.."
+                    "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua."
                 },
               ],
               nivel: 4,
@@ -280,7 +280,7 @@ const orgData = {
                   telefone: "(61) 98130-3575",
                   nascimento: "15-08-2024",
                   descricao:
-                    "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua.."
+                    "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua."
                 }, 
                     {
                       nome: "Matheus Guerra",
@@ -290,7 +290,7 @@ const orgData = {
                       telefone: "(61) 98145-4582",
                       nascimento: "26-11-2003",
                       descricao:
-                        "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua.."
+                        "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua."
                     },
                     {
                       nome: "Vinicius Borges",
@@ -300,7 +300,7 @@ const orgData = {
                       telefone: "(61) 99848-7550",
                       nascimento: "02-06-1998",
                       descricao:
-                        "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua.."
+                        "<br>Responsável por apoiar técnicos na instalação e manutenção de sistemas de segurança eletrônica, executando tarefas operacionais sob supervisão e desenvolvendo conhecimento técnico de forma contínua."
                     }
                   ],
                   nivel: 4,
