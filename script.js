@@ -24,7 +24,7 @@ const orgData = {
           nascimento: "09-07-1984",
           admissao: "01/2021",
           descricao:
-            "<br> Responsável por coordenar as operações técnicas e administrativas do setor, liderando equipes, acompanhando serviços, garantindo qualidade e alinhamento com práticas de segurança, performance e eficiência.."
+            "<br> Responsável por coordenar as operações técnicas e administrativas do setor, liderando equipes, acompanhando serviços, garantindo qualidade e alinhamento com práticas de segurança, performance e eficiência."
         }
       ],
       nivel: 2,
@@ -62,7 +62,7 @@ const orgData = {
                 },
                 {
                   nome: "Davi Gadioli",
-                  matricula: "001234",
+                  matricula: "53085",
                   foto: "https://github.com/user-attachments/assets/0c105ea1-3fe7-44b5-8ead-b53247698363",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 99999-9999",
@@ -84,7 +84,7 @@ const orgData = {
                 },
                 {
                   nome: "Lucas Sales",
-                  matricula: "001234",
+                  matricula: "53281",
                   foto: "https://github.com/user-attachments/assets/75b5cd83-0968-4051-b758-255d0a39fbdf",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 99999-9999",
@@ -111,7 +111,7 @@ const orgData = {
               nascimento: "06-05-2003",
               admissao: "03/2024",
               descricao:
-                "<br>Responsável por atendimentos técnicos remotos e presenciais, identificando e corrigindo falhas em sistemas de segurança eletrônica. Atua de forma analítica, orientando usuários, elaborando relatórios e apoiando projetos, garantindo disponibilidade e desempenho dos sistemas.."
+                "<br>Responsável por atendimentos técnicos remotos e presenciais, identificando e corrigindo falhas em sistemas de segurança eletrônica. Atua de forma analítica, orientando usuários, elaborando relatórios e apoiando projetos, garantindo disponibilidade e desempenho dos sistemas."
             }
           ],
           nivel: 3,
@@ -128,7 +128,7 @@ const orgData = {
                   nascimento: "14-09-1999",
                   admissao: "03/2025",
                   descricao:
-                    "<br>Responsável por atendimentos técnicos remotos e presenciais, identificando e corrigindo falhas em sistemas de segurança eletrônica. Atua de forma analítica, orientando usuários, elaborando relatórios e apoiando projetos, garantindo disponibilidade e desempenho dos sistemas.."
+                    "<br>Responsável por atendimentos técnicos remotos e presenciais, identificando e corrigindo falhas em sistemas de segurança eletrônica. Atua de forma analítica, orientando usuários, elaborando relatórios e apoiando projetos, garantindo disponibilidade e desempenho dos sistemas."
                 },
                 {
                   nome: "Quedma Paula",
@@ -139,7 +139,7 @@ const orgData = {
                   nascimento: "",
                   admissao: "10/03/2025",
                   descricao:
-                    "<br>Responsável por atendimentos técnicos remotos e presenciais, identificando e corrigindo falhas em sistemas de segurança eletrônica. Atua de forma analítica, orientando usuários, elaborando relatórios e apoiando projetos, garantindo disponibilidade e desempenho dos sistemas.."
+                    "<br>Responsável por atendimentos técnicos remotos e presenciais, identificando e corrigindo falhas em sistemas de segurança eletrônica. Atua de forma analítica, orientando usuários, elaborando relatórios e apoiando projetos, garantindo disponibilidade e desempenho dos sistemas."
                 }
               ],
               nivel: 3,
@@ -212,7 +212,7 @@ const orgData = {
               nascimento: "06-04-2003",
               admissao: "02/2021",
               descricao:
-                "<br>Responsável por instalar, configurar e manter sistemas de segurança eletrônica, garantindo funcionamento adequado de alarmes, CFTV, cercas elétricas e controles de acesso, atuando diretamente em campo com precisão técnica e conformidade.."
+                "<br>Responsável por instalar, configurar e manter sistemas de segurança eletrônica, garantindo funcionamento adequado de alarmes, CFTV, cercas elétricas e controles de acesso, atuando diretamente em campo com precisão técnica e conformidade."
             },
             {
               nome: "Thiago Alves",
@@ -223,7 +223,7 @@ const orgData = {
               nascimento: "29-07-1985",
               admissao: "10/2025",
               descricao:
-                "<br>Responsável por instalar, configurar e manter sistemas de segurança eletrônica, garantindo funcionamento adequado de alarmes, CFTV, cercas elétricas e controles de acesso, atuando diretamente em campo com precisão técnica e conformidade.."
+                "<br>Responsável por instalar, configurar e manter sistemas de segurança eletrônica, garantindo funcionamento adequado de alarmes, CFTV, cercas elétricas e controles de acesso, atuando diretamente em campo com precisão técnica e conformidade."
             }
           ],
           nivel: 3,
@@ -274,7 +274,7 @@ const orgData = {
                   nomes: [
                     {
                   nome: "Atila Gabriel",
-                  matricula: "001234",
+                  matricula: "52191",
                   foto: "https://github.com/user-attachments/assets/2e4c3c8c-9729-4a5d-b95d-34a59a017f5a",
                   email: "danilo.vinicius@brasfort.com",
                   telefone: "(61) 99999-9999",
@@ -294,7 +294,7 @@ const orgData = {
                     },
                     {
                       nome: "Vinicius Borges",
-                      matricula: "001234",
+                      matricula: "52944",
                       foto: "https://github.com/user-attachments/assets/e9038a7d-dccb-4025-a41b-fd29594982e3",
                       email: "danilo.vinicius@brasfort.com",
                       telefone: "(61) 99999-9999",
