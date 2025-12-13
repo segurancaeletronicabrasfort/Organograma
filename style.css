@@ -1,3 +1,6 @@
+/* ===================== IMPORTAÇÃO DA FONTE BARLOW ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* ===================== BASE ===================== */
 *,
 *::before,
@@ -55,7 +58,9 @@
 
 /* ===================== BODY / LAYOUT ===================== */
 body {
-  font-family: "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+  /* Alterado para Barlow */
+  font-family: "Barlow", sans-serif;
+  font-weight: 400; /* Regular por padrão */
   background: var(--bg);
   margin: 0;
   padding: 0;
@@ -84,10 +89,12 @@ body {
 }
 
 .header-brand h1 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px; /* Aumentei levemente para a Barlow */
+  font-weight: 700; /* Barlow Bold */
   color: #24292f;
   margin: 0;
+  text-transform: uppercase; /* Fica ótimo com Barlow */
+  letter-spacing: 0.5px;
 }
 
 /* Logo clicável à direita */
@@ -122,7 +129,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: #f4f5f7; /* leve fundo para o gráfico */
+  background: #f4f5f7;
 }
 
 /* ===================== ESTRUTURA DO ORGANOGRAMA ===================== */
@@ -137,7 +144,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin: 0; /* evita esticar linhas */
+  margin: 0;
 }
 
 .group-container {
@@ -156,7 +163,7 @@ body {
 /* ===================== CARDS ===================== */
 .card {
   position: relative;
-  padding-top: 18px;       /* espaço para a barrinha superior */
+  padding-top: 18px;
   background: var(--surface);
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-2);
@@ -171,7 +178,6 @@ body {
   transition: 0.2s ease;
 }
 
-/* mini-header colorido no topo do card */
 .card::before {
   content: "";
   position: absolute;
@@ -180,7 +186,7 @@ body {
   right: 12px;
   height: 4px;
   border-radius: 999px;
-  background: #d1d5db; /* default, sobrescrito por nível se quiser */
+  background: #d1d5db;
   opacity: 0.8;
 }
 
@@ -203,8 +209,8 @@ body {
   display: grid;
   place-items: center;
   color: #fff;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 700; /* Barlow Bold */
+  font-size: 16px;
   margin-bottom: 8px;
   background: #c7cbd1;
   overflow: hidden;
@@ -219,31 +225,32 @@ body {
 /* Texto do card */
 .card h3 {
   margin: 0 0 4px;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700; /* Barlow Bold */
   color: var(--text);
+  line-height: 1.2;
 }
 
 .role-tag {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--muted);
   background: #f3f4f6;
-  padding: 2px 6px;
+  padding: 3px 8px;
   border-radius: 999px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-weight: 700; /* Barlow Bold para leitura melhor em tamanho pequeno */
 }
 
 /* ===================== CORES POR NÍVEL ===================== */
-/* Nível 1 (Gerência) destacado */
 .level-1 .card {
   background: linear-gradient(135deg, #283868 0%, #324a86 60%, #ffffff 100%);
   color: #ffffff;
   border-color: transparent;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
   transform: translateY(-2px);
-  width: 170px; /* um pouco maior */
-  border-top: none; /* não usa borda-top colorida */
+  width: 170px;
+  border-top: none;
 }
 
 .level-1 .card::before {
@@ -259,46 +266,24 @@ body {
   border: 2px solid rgba(255,255,255,0.6);
 }
 
-/* Demais níveis usam borda-top + cor da barrinha */
-.level-2 .card {
-  border-top: 3px solid #d1af6e;
-}
-.level-2 .card::before {
-  background: #d1af6e;
-}
+.level-2 .card { border-top: 3px solid #d1af6e; }
+.level-2 .card::before { background: #d1af6e; }
 
-.level-3 .card {
-  border-top: 3px solid #4683c4;
-}
-.level-3 .card::before {
-  background: #4683c4;
-}
+.level-3 .card { border-top: 3px solid #4683c4; }
+.level-3 .card::before { background: #4683c4; }
 
-.level-4 .card {
-  border-top: 3px solid #1e90ff;
-}
-.level-4 .card::before {
-  background: #1e90ff;
-}
+.level-4 .card { border-top: 3px solid #1e90ff; }
+.level-4 .card::before { background: #1e90ff; }
 
-.level-5 .card {
-  border-top: 3px solid #4b6387;
-}
-.level-5 .card::before {
-  background: #4b6387;
-}
+.level-5 .card { border-top: 3px solid #4b6387; }
+.level-5 .card::before { background: #4b6387; }
 
 /* ===================== CONECTORES DO ORGANOGRAMA ===================== */
-
-/* Desativa qualquer modelo antigo de linhas */
 .node::before,
 .node::after {
   display: none !important;
 }
 
-/* Container dos filhos:
-   inline-flex + fit-content para encolher ao conteúdo
-   gap controla espaçamento entre nós filhos */
 .children {
   display: inline-flex !important;
   width: fit-content !important;
@@ -306,7 +291,7 @@ body {
   justify-content: center;
   align-self: center;
   position: relative;
-  padding-top: 36px; /* espaço para linha horizontal */
+  padding-top: 36px;
 }
 
 @supports not (width: fit-content) {
@@ -315,7 +300,6 @@ body {
   }
 }
 
-/* Linha vertical do pai até a horizontal */
 .children::before {
   content: "";
   position: absolute;
@@ -326,7 +310,6 @@ body {
   border-left: 2px solid rgba(40, 56, 104, 0.25);
 }
 
-/* Linha horizontal conectando os filhos */
 .children::after {
   content: "";
   position: absolute;
@@ -337,7 +320,6 @@ body {
   border-radius: 999px;
 }
 
-/* Cada filho recebe sua linha vertical descendo da horizontal */
 .children > .node {
   position: relative;
   padding-top: 18px;
@@ -353,7 +335,6 @@ body {
   border-left: 2px solid rgba(40, 56, 104, 0.25);
 }
 
-/* Se houver apenas um filho, remove a horizontal */
 .children.single-child::after {
   display: none;
 }
@@ -421,9 +402,9 @@ body {
   margin: 0 auto 14px;
   display: grid;
   place-items: center;
-  font-size: 28px;
+  font-size: 32px;
   color: #555;
-  font-weight: 700;
+  font-weight: 700; /* Barlow Bold */
   border: 3px solid #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -437,7 +418,8 @@ body {
 
 .modal-header h2 {
   margin: 0 0 6px;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 700; /* Barlow Bold */
   color: #222;
 }
 
@@ -447,9 +429,10 @@ body {
   background: #e3f2fd;
   color: var(--accent);
   border-radius: 20px;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 700; /* Barlow Bold */
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .modal-divider {
@@ -469,17 +452,17 @@ body {
   gap: 12px;
   padding: 8px 0;
   border-bottom: 1px dashed #f0f0f0;
-  font-size: 14px;
+  font-size: 15px; /* Levemente maior para Barlow */
 }
 
 .info-label {
-  color: #888;
-  font-weight: 500;
+  color: #4b5563;
+  font-weight: 400; /* Barlow Regular */
 }
 
 .info-value {
-  color: #333;
-  font-weight: 600;
+  color: #111827;
+  font-weight: 700; /* Barlow Bold */
   text-align: right;
 }
 
@@ -491,88 +474,38 @@ body {
 }
 
 .info-row-descricao .info-label {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  font-weight: 700; /* Destaque para o título "Descrição" */
 }
 
 .info-row-descricao .descricao-text {
   width: 100%;
   text-align: justify;
-  font-weight: 400;
-  line-height: 1.5;
+  font-weight: 400; /* Barlow Regular */
+  line-height: 1.6;
   background: #f9fafb;
-  padding: 8px 10px;
+  padding: 10px 12px;
   border-radius: 6px;
-}
-
-/* ===================== RESPONSIVIDADE ===================== */
-@media (max-width: 768px) {
-  .org-chart {
-    justify-content: flex-start;
-  }
-
-  .group-container {
-    gap: 10px;
-  }
-
-  .card {
-    width: 125px;
-  }
-
-  .avatar {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .card,
-  .modal-overlay,
-  .modal-content,
-  .header-logo-right {
-    transition: none;
-  }
-}
-/* Ajuste de contraste da tag de cargo na Gerência (nível 1) */
-.level-1 .role-tag {
-  background: rgba(0, 0, 0, 0.28);    /* fundo mais escuro e translúcido */
-  color: #f9fafb;                      /* texto bem claro */
-  border: 1px solid rgba(255, 255, 255, 0.35);
-}
-/* Deixar labels e valores um pouco mais fortes no modal */
-.info-label {
-  color: #4b5563;   /* cinza mais escuro */
-  font-weight: 500;
-}
-
-.info-value {
-  color: #111827;   /* quase preto */
-  font-weight: 600;
-}
-
-/* Descrição justificada com melhor contraste e leve destaque */
-.info-row-descricao .descricao-text {
   color: #111827;
-  background: #f3f4f6;
-  text-align: justify;
-  line-height: 1.55;
 }
+
 /* Wrapper do botão + card de descrição detalhada */
 .descricao-detalhada-wrapper {
   margin-top: 12px;
 }
 
-/* Botão dentro do modal para abrir a descrição detalhada */
 .btn-detalhes-descricao {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border-radius: 999px;
   border: 1px solid #d1d5db;
   background: #f9fafb;
   color: #111827;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 14px;
+  font-family: "Barlow", sans-serif; /* Garante que o botão use a fonte */
+  font-weight: 700; /* Barlow Bold */
   cursor: pointer;
   transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
 }
@@ -587,10 +520,9 @@ body {
   transform: translateY(0);
 }
 
-/* Card com o texto detalhado */
 .descricao-detalhada-card {
   margin-top: 10px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border-radius: 8px;
   background: #f3f4f6;
   border: 1px solid #e5e7eb;
@@ -599,13 +531,47 @@ body {
 
 .descricao-detalhada-card p {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   text-align: justify;
   color: #111827;
+  font-weight: 400; /* Barlow Regular */
 }
 
 /* Classe utilitária para esconder/mostrar */
 .hidden {
   display: none !important;
+}
+
+.level-1 .role-tag {
+  background: rgba(0, 0, 0, 0.28);
+  color: #f9fafb;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  font-weight: 700; /* Barlow Bold */
+}
+
+/* ===================== RESPONSIVIDADE ===================== */
+@media (max-width: 768px) {
+  .org-chart {
+    justify-content: flex-start;
+  }
+  .group-container {
+    gap: 10px;
+  }
+  .card {
+    width: 125px;
+  }
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .modal-overlay,
+  .modal-content,
+  .header-logo-right {
+    transition: none;
+  }
 }
