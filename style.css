@@ -35,6 +35,7 @@
   align-items: center;
   z-index: 9999;
   transition: opacity 0.8s ease, visibility 0.8s ease;
+  padding: 0; /* Garante que não tenha espaçamento interno */
 }
 
 #splash-screen.hidden {
@@ -44,15 +45,16 @@
 }
 
 #splash-screen img {
-  max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 100%;       /* Força a imagem a ocupar 100% da altura da tela */
+  object-fit: cover;  /* Preenche tudo, cortando excessos sem distorcer */
+  object-position: center; /* Mantém o centro da imagem visível */
   animation: pulseLogo 2s infinite ease-in-out;
 }
 
 @keyframes pulseLogo {
   0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.9; }
+  50% { transform: scale(1.02); opacity: 0.95; } /* Reduz o pulso para não cortar demais */
   100% { transform: scale(1); opacity: 1; }
 }
 
