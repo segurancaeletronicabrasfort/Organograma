@@ -220,7 +220,7 @@ if (btnAdmin) {
         // Verifica a senha
         if (senha === "123497") {
             // Se correta, manda para o editor
-            window.location.href = "admin.html";
+            window.location.href = "Admin/admin.html";
         } else if (senha !== null) {
             // Se errada (e não clicou em cancelar)
             alert("Senha incorreta! Acesso negado.");
