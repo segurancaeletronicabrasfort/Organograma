@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organograma Segurança Eletrônica</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 <body>
 
     <div id="splash-screen">
         <img src="https://github.com/user-attachments/assets/fb03c30a-d16a-4f23-980d-ca650748c93d" alt="Carregando...">
     </div>
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <header class="main-header">
         <div class="header-brand">
@@ -27,12 +26,12 @@
             <h1>Organograma Segurança Eletrônica</h1>
         </div>
         
-        <div class="header-actions">
-            <button id="btn-admin-access" class="btn-admin" title="Acesso Administrativo">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <button id="btn-admin-access" class="btn-admin" title="Acesso Administrativo" style="background:none; border:none; cursor:pointer; color:#64748b;">
                 <span class="material-icons-round">lock</span>
             </button>
 
-            <a href="https://www.brasfort.com.br" target="_blank" class="header-logo-right" title="Acessar Site">
+            <a href="https://www.brasfort.com.br" target="_blank" class="header-logo-right" title="Acessar Link">
                 <img src="https://github.com/user-attachments/assets/c2b36556-9dd9-4d64-9107-f5c742b1bb84" alt="Logo">
             </a>
         </div>
@@ -40,6 +39,12 @@
 
     <main>
         <div id="org-container" class="org-chart"></div>
+
+        <div class="section-divider">
+            <span>Apoio Operacional & Aprendizado</span>
+        </div>
+
+        <div id="support-container" class="support-grid"></div>
     </main>
 
     <div id="profile-modal" class="modal-overlay">
