@@ -353,14 +353,14 @@ body {
 /* (Removemos a metade esquerda da linha) */
 .node:first-child::before {
   left: 50%;
-  width: 55%;
+  width: 70%;
 }
 
 /* 2. Último Filho: A linha horizontal deve começar na esquerda e parar no meio */
 /* (Removemos a metade direita da linha) */
 .node:last-child::before {
   right: 50%;
-  width: 60%;
+  width: 70%;
   left: auto; /* Importante para anular o left:0 padrão */
 }
 
