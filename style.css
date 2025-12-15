@@ -122,38 +122,6 @@ body {
   display: block;
 }
 
-/* Agrupa os itens da direita (Botão + Logo) */
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Espaço entre o cadeado e a logo */
-}
-
-/* Botão de Admin */
-.btn-admin {
-    background: transparent;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: #64748b; /* Cinza discreto */
-    transition: all 0.2s ease;
-}
-
-.btn-admin:hover {
-    background-color: #f1f5f9;
-    color: #1976d2; /* Azul ao passar o mouse */
-    border-color: #e2e8f0;
-}
-
-.btn-admin .material-icons-round {
-    font-size: 20px;
-}
-
 /* ===================== ÁREA PRINCIPAL DO ORGANOGRAMA ===================== */
 #org-container {
   flex: 1;
@@ -710,4 +678,52 @@ body {
   .header-logo-right {
     transition: none;
   }
+}
+
+/* ===================== ÁREA INFERIOR (APOIO) ===================== */
+
+/* Divisória elegante */
+.section-divider {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e1e4e8;
+    line-height: 0.1em;
+    margin: 40px 0 30px;
+    color: #94a3b8;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-divider span {
+    background: #f4f5f7; /* Mesma cor do fundo da main */
+    padding: 0 15px;
+}
+
+/* Container dos grupos de apoio */
+.support-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+/* Ajuste para que os grupos fiquem bonitos sem as linhas da árvore */
+.support-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Responsividade para o rodapé */
+@media (max-width: 768px) {
+    .support-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .support-group {
+        flex-wrap: wrap;
+    }
 }
