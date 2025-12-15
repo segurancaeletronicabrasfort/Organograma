@@ -44,55 +44,7 @@
             }
           ],
           "nivel": 3,
-          "filhos": [
-            {
-              "cargo": "Jovem Aprendiz",
-              "nomes": [
-                {
-                  "nome": "Isack Aragão",
-                  "foto": "https://github.com/user-attachments/assets/1b7764bc-ae95-4c67-94cc-c1975f46728c",
-                  "matricula": "52698",
-                  "email": "isack.aragao@brasfort.com.br",
-                  "telefone": "(61) 99452-0714",
-                  "nascimento": "28/08/2008",
-                  "admissao": "03/2025",
-                  "descricao": "<br>Responsável por apoiar atividades administrativas e técnicas básicas no setor de segurança eletrônica, auxiliando na organização de documentos, no atendimento interno, no controle de materiais e no suporte simples a equipes de campo, desenvolvendo competências profissionais e conhecimento prático."
-                },
-                {
-                  "nome": "Davi Gadiolli",
-                  "matricula": "53085",
-                  "foto": "https://github.com/user-attachments/assets/0c105ea1-3fe7-44b5-8ead-b53247698363",
-                  "email": "gadioldavi024@gmail.com",
-                  "telefone": "(61) 98655-8705",
-                  "nascimento": "29/07/2008",
-                  "admissao": "15/07/2025",
-                  "descricao": "<br>Responsável por apoiar atividades administrativas e técnicas básicas no setor de segurança eletrônica, auxiliando na organização de documentos, no atendimento interno, no controle de materiais e no suporte simples a equipes de campo, desenvolvendo competências profissionais e conhecimento prático."
-                },
-                {
-                  "nome": "Guilherme Alexandre",
-                  "matricula": "53097",
-                  "email": "guilherme.alexandre@brasfort.com.br",
-                  "foto": "https://github.com/user-attachments/assets/8593b0fc-76d4-436d-abfc-8fefa5b96a07",
-                  "telefone": "(61) 99125-3726",
-                  "nascimento": "02/03/2008",
-                  "admissao": "09/2025",
-                  "descricao": "<br>Responsável por apoiar atividades administrativas e técnicas básicas no setor de segurança eletrônica, auxiliando na organização de documentos, no atendimento interno, no controle de materiais e no suporte simples a equipes de campo, desenvolvendo competências profissionais e conhecimento prático."
-                },
-                {
-                  "nome": "Lucas Sales",
-                  "matricula": "53281",
-                  "foto": "https://github.com/user-attachments/assets/75b5cd83-0968-4051-b758-255d0a39fbdf",
-                  "email": "lucas.sales@brasfort.com.br",
-                  "telefone": "(61) 99992-9582",
-                  "nascimento": "26/03/2008",
-                  "admissao": "11/2025",
-                  "descricao": "<br>Responsável por apoiar atividades administrativas e técnicas básicas no setor de segurança eletrônica, auxiliando na organização de documentos, no atendimento interno, no controle de materiais e no suporte simples a equipes de campo, desenvolvendo competências profissionais e conhecimento prático."
-                }
-              ],
-              "nivel": 5,
-              "filhos": []
-            }
-          ]
+          "filhos": []
         },
         {
           "cargo": "Técnico de Suporte",
@@ -306,6 +258,53 @@
               ]
             }
           ]
+        },
+        {
+          "cargo": "Jovem Aprendiz",
+          "nomes": [
+            {
+              "nome": "Isack Aragão",
+              "foto": "https://github.com/user-attachments/assets/1b7764bc-ae95-4c67-94cc-c1975f46728c",
+              "matricula": "52698",
+              "email": "isack.aragao@brasfort.com.br",
+              "telefone": "(61) 99452-0714",
+              "nascimento": "28/08/2008",
+              "admissao": "03/2025",
+              "descricao": "<br>Responsável por apoiar atividades administrativas e técnicas básicas no setor de segurança eletrônica, auxiliando na organização de documentos, no atendimento interno, no controle de materiais e no suporte simples a equipes de campo, desenvolvendo competências profissionais e conhecimento prático."
+            },
+            {
+              "nome": "Davi Gadiolli",
+              "matricula": "53085",
+              "foto": "https://github.com/user-attachments/assets/0c105ea1-3fe7-44b5-8ead-b53247698363",
+              "email": "gadioldavi024@gmail.com",
+              "telefone": "(61) 98655-8705",
+              "nascimento": "29/07/2008",
+              "admissao": "15/07/2025",
+              "descricao": "<br>Responsável por apoiar atividades administrativas e técnicas básicas no setor de segurança eletrônica, auxiliando na organização de documentos, no atendimento interno, no controle de materiais e no suporte simples a equipes de campo, desenvolvendo competências profissionais e conhecimento prático."
+            },
+            {
+              "nome": "Guilherme Alexandre",
+              "matricula": "53097",
+              "email": "guilherme.alexandre@brasfort.com.br",
+              "foto": "https://github.com/user-attachments/assets/8593b0fc-76d4-436d-abfc-8fefa5b96a07",
+              "telefone": "(61) 99125-3726",
+              "nascimento": "02/03/2008",
+              "admissao": "09/2025",
+              "descricao": "<br>Responsável por apoiar atividades administrativas e técnicas básicas no setor de segurança eletrônica, auxiliando na organização de documentos, no atendimento interno, no controle de materiais e no suporte simples a equipes de campo, desenvolvendo competências profissionais e conhecimento prático."
+            },
+            {
+              "nome": "Lucas Sales",
+              "matricula": "53281",
+              "foto": "https://github.com/user-attachments/assets/75b5cd83-0968-4051-b758-255d0a39fbdf",
+              "email": "lucas.sales@brasfort.com.br",
+              "telefone": "(61) 99992-9582",
+              "nascimento": "26/03/2008",
+              "admissao": "11/2025",
+              "descricao": "<br>Responsável por apoiar atividades administrativas e técnicas básicas no setor de segurança eletrônica, auxiliando na organização de documentos, no atendimento interno, no controle de materiais e no suporte simples a equipes de campo, desenvolvendo competências profissionais e conhecimento prático."
+            }
+          ],
+          "nivel": 5,
+          "filhos": []
         }
       ]
     }
