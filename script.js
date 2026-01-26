@@ -11,7 +11,7 @@ function getInitials(name) {
 }
 
 // ============================================================================
-// 2. LÓGICA DO MODAL
+// 2. MODAL DE PERFIL
 // ============================================================================
 const modalOverlay = document.getElementById('profile-modal');
 const closeModalBtn = document.querySelector('.close-btn');
@@ -20,74 +20,59 @@ const modalName = document.getElementById('modal-name');
 const modalRole = document.getElementById('modal-role');
 const modalBody = document.getElementById('modal-body');
 
-function openModal(pessoaDados, cargoTitulo) {
-    modalBody.innerHTML = '';
+function openModal(pessoa, cargo) {
     modalAvatar.innerHTML = '';
-    modalName.innerText = pessoaDados.nome || '';
-    const cargoFinal = pessoaDados.cargo || cargoTitulo || '';
-    modalRole.innerText = cargoFinal;
+    modalBody.innerHTML = '';
+    modalName.innerText = pessoa.nome || '';
+    modalRole.innerText = cargo || '';
 
-    if (pessoaDados.foto) {
+    if (pessoa.foto) {
         const img = document.createElement('img');
-        img.src = pessoaDados.foto;
-        img.onerror = () => { modalAvatar.innerText = getInitials(pessoaDados.nome); };
+        img.src = pessoa.foto;
+        img.onerror = () => modalAvatar.innerText = getInitials(pessoa.nome);
         modalAvatar.appendChild(img);
     } else {
-        modalAvatar.innerText = getInitials(pessoaDados.nome);
+        modalAvatar.innerText = getInitials(pessoa.nome);
     }
 
     const campos = [
-        { key: 'matricula', label: 'Matrícula' },
-        { key: 'email', label: 'E-mail' },
-        { key: 'telefone', label: 'Telefone' },
-        { key: 'nascimento', label: 'Data de Nascimento' },
-        { key: 'admissao', label: 'Data de Admissão' },
-        { key: 'descricao', label: 'Descrição' }
+        ['matricula', 'Matrícula'],
+        ['email', 'E-mail'],
+        ['telefone', 'Telefone'],
+        ['nascimento', 'Nascimento'],
+        ['admissao', 'Admissão'],
+        ['descricao', 'Descrição']
     ];
 
     let hasInfo = false;
-    campos.forEach(campo => {
-        const valor = pessoaDados[campo.key];
-        if (!valor) return;
+
+    campos.forEach(([key, label]) => {
+        if (!pessoa[key]) return;
         hasInfo = true;
+
         const row = document.createElement('div');
         row.className = 'info-row';
-        
-        if (campo.key === 'descricao') {
+
+        if (key === 'descricao') {
             row.classList.add('info-row-descricao');
-            const textoDescricao = String(valor).replace(/^<br\s*\/?>/i, '');
-            row.innerHTML = `<span class="info-label">${campo.label}</span><p class="info-value descricao-text">${textoDescricao}</p>`;
+            row.innerHTML = `
+                <span class="info-label">${label}</span>
+                <p class="descricao-text">${String(pessoa[key]).replace(/^<br\s*\/?>/i, '')}</p>
+            `;
         } else {
-            row.innerHTML = `<span class="info-label">${campo.label}</span><span class="info-value">${valor}</span>`;
+            row.innerHTML = `
+                <span class="info-label">${label}</span>
+                <span class="info-value">${pessoa[key]}</span>
+            `;
         }
+
         modalBody.appendChild(row);
     });
 
-    if (pessoaDados.descricaoDetalhada) {
-        hasInfo = true;
-        const wrapper = document.createElement('div');
-        wrapper.className = 'descricao-detalhada-wrapper';
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'btn-detalhes-descricao';
-        btn.textContent = 'Ver descrição detalhada';
-        
-        const detailCard = document.createElement('div');
-        detailCard.className = 'descricao-detalhada-card hidden';
-        const textoLongo = String(pessoaDados.descricaoDetalhada).replace(/^<br\s*\/?>/i, '');
-        detailCard.innerHTML = `<p>${textoLongo}</p>`;
-
-        btn.addEventListener('click', () => {
-            const isHidden = detailCard.classList.contains('hidden');
-            detailCard.classList.toggle('hidden', !isHidden);
-            btn.textContent = isHidden ? 'Ocultar descrição detalhada' : 'Ver descrição detalhada';
-        });
-        wrapper.appendChild(btn);
-        wrapper.appendChild(detailCard);
-        modalBody.appendChild(wrapper);
+    if (!hasInfo) {
+        modalBody.innerHTML = `<p style="color:#999;font-style:italic;">Nenhuma informação cadastrada.</p>`;
     }
 
-    if (!hasInfo) modalBody.innerHTML = '<p style="color:#999; font-style:italic;">Nenhuma informação adicional cadastrada.</p>';
     modalOverlay.classList.add('active');
 }
 
@@ -95,13 +80,70 @@ function closeModal() {
     modalOverlay.classList.remove('active');
 }
 
-if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
-if (modalOverlay) modalOverlay.addEventListener('click', (e) => {
+closeModalBtn?.addEventListener('click', closeModal);
+modalOverlay?.addEventListener('click', e => {
     if (e.target === modalOverlay) closeModal();
 });
 
+function createCard(pessoa, cargo, index) {
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const storageKey = `org_${cargo}_${index}`;
+
+    // Avatar
+    const avatar = document.createElement('div');
+    avatar.className = 'avatar';
+
+    if (pessoa.foto) {
+        const img = document.createElement('img');
+        img.src = pessoa.foto;
+        img.onerror = () => avatar.innerText = getInitials(pessoa.nome);
+        avatar.appendChild(img);
+    } else {
+        avatar.innerText = getInitials(pessoa.nome || '');
+    }
+
+    // Input de nome
+    const nameInput = document.createElement('input');
+    nameInput.type = 'text';
+    nameInput.placeholder = 'Preencher nome';
+    nameInput.className = 'card-name-input';
+
+    // Valor inicial (localStorage > JSON)
+    const savedName = localStorage.getItem(storageKey);
+    if (savedName) {
+        nameInput.value = savedName;
+    } else if (pessoa.nome && pessoa.nome !== 'vaga em aberto') {
+        nameInput.value = pessoa.nome.replace(/\s*\((Dia|Noite)\)/i, '');
+    }
+
+    // Salvar automaticamente ao digitar
+    nameInput.addEventListener('input', () => {
+        localStorage.setItem(storageKey, nameInput.value);
+    });
+
+    // Cargo
+    const roleEl = document.createElement('div');
+    roleEl.className = 'role-tag';
+    roleEl.innerText = cargo;
+
+    card.appendChild(avatar);
+    card.appendChild(nameInput);
+    card.appendChild(roleEl);
+
+    // Abrir modal sem conflitar com input
+    card.addEventListener('click', (e) => {
+        if (e.target.tagName.toLowerCase() === 'input') return;
+        openModal(pessoa, cargo);
+    });
+
+    return card;
+}
+
+
 // ============================================================================
-// 3. RENDERIZAÇÃO DA ÁRVORE PRINCIPAL (COM LINHAS)
+// 4. RENDERIZAÇÃO DA ÁRVORE PRINCIPAL
 // ============================================================================
 function createNodeElement(data) {
     const nodeDiv = document.createElement('div');
@@ -109,148 +151,110 @@ function createNodeElement(data) {
 
     const groupDiv = document.createElement('div');
     groupDiv.className = 'group-container';
-    if (data.layout === "vertical") groupDiv.classList.add("vertical-layout");
+    if (data.layout === 'vertical') groupDiv.classList.add('vertical-layout');
 
-    if (data.nomes && data.nomes.length > 0) {
+    // ===== CASO ESPECIAL: OP. MONITORAMENTO =====
+    if (data.cargo === 'Op. Monitoramento') {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'monitoramento-columns';
+
+        const colDia = document.createElement('div');
+        colDia.className = 'monitoramento-col';
+        colDia.innerHTML = '<h4>Operadores – Dia</h4>';
+
+        const colNoite = document.createElement('div');
+        colNoite.className = 'monitoramento-col';
+        colNoite.innerHTML = '<h4>Operadores – Noite</h4>';
+
         data.nomes.forEach(pessoa => {
-            let dados = (typeof pessoa === 'object') ? pessoa : { nome: pessoa };
-            const card = document.createElement('div');
-            card.className = 'card';
+            const card = createCard(pessoa, data.cargo);
+            const turno = (pessoa.turno || '').toLowerCase();
 
-            const avatarMini = document.createElement('div');
-            avatarMini.className = 'avatar';
-            if (dados.foto) {
-                const img = document.createElement('img');
-                img.src = dados.foto;
-                avatarMini.appendChild(img);
-            } else {
-                avatarMini.innerText = getInitials(dados.nome);
-            }
+            if (turno === 'noite') colNoite.appendChild(card);
+            else colDia.appendChild(card);
+        });
 
-            const nameEl = document.createElement('h3');
-            nameEl.innerText = dados.nome;
-            const roleEl = document.createElement('div');
-            roleEl.className = 'role-tag';
-            roleEl.innerText = data.cargo;
+        wrapper.appendChild(colDia);
+        wrapper.appendChild(colNoite);
+        groupDiv.appendChild(wrapper);
 
-            card.appendChild(avatarMini);
-            card.appendChild(nameEl);
-            card.appendChild(roleEl);
-            card.addEventListener('click', () => openModal(dados, data.cargo));
-            groupDiv.appendChild(card);
+    } else if (Array.isArray(data.nomes)) {
+        data.nomes.forEach(pessoa => {
+            groupDiv.appendChild(createCard(pessoa, data.cargo));
         });
     }
+
     nodeDiv.appendChild(groupDiv);
 
+    // Filhos
     if (Array.isArray(data.filhos) && data.filhos.length > 0) {
-        const childrenContainer = document.createElement('div');
-        childrenContainer.className = 'children';
-        if (data.filhos.length === 1) childrenContainer.classList.add('single-child');
-        
+        const children = document.createElement('div');
+        children.className = 'children';
+
         data.filhos.forEach(filho => {
-            if (!filho || typeof filho !== "object") return;
-            const childEl = createNodeElement(filho);
-            if (childEl instanceof Node) childrenContainer.appendChild(childEl);
+            children.appendChild(createNodeElement(filho));
         });
-        nodeDiv.appendChild(childrenContainer);
+
+        nodeDiv.appendChild(children);
     }
+
     return nodeDiv;
 }
 
 // ============================================================================
-// 4. NOVA FUNÇÃO: RENDERIZAR GRUPOS DE APOIO (SEM LINHAS)
+// 5. APOIO (SEM LINHAS)
 // ============================================================================
 function renderSupportGroups(grupos) {
     const container = document.getElementById('support-container');
-    if (!container || !grupos) return;
-    container.innerHTML = ''; 
+    container.innerHTML = '';
 
     grupos.forEach(grupo => {
-        const groupWrapper = document.createElement('div');
-        groupWrapper.className = 'support-group';
+        const wrapper = document.createElement('div');
+        wrapper.className = 'support-group';
 
-        if (grupo.nomes && grupo.nomes.length > 0) {
-            grupo.nomes.forEach(pessoa => {
-                let dados = (typeof pessoa === 'object') ? pessoa : { nome: pessoa };
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.style.borderTop = "3px solid #94a3b8"; 
+        grupo.nomes.forEach(pessoa => {
+            wrapper.appendChild(createCard(pessoa, grupo.cargo));
+        });
 
-                const avatarMini = document.createElement('div');
-                avatarMini.className = 'avatar';
-                if (dados.foto) {
-                    const img = document.createElement('img');
-                    img.src = dados.foto;
-                    avatarMini.appendChild(img);
-                } else {
-                    avatarMini.innerText = getInitials(dados.nome);
-                }
-
-                const nameEl = document.createElement('h3');
-                nameEl.innerText = dados.nome;
-                const roleEl = document.createElement('div');
-                roleEl.className = 'role-tag';
-                roleEl.innerText = grupo.cargo;
-
-                card.appendChild(avatarMini);
-                card.appendChild(nameEl);
-                card.appendChild(roleEl);
-                card.addEventListener('click', () => openModal(dados, grupo.cargo));
-                groupWrapper.appendChild(card);
-            });
-        }
-        container.appendChild(groupWrapper);
+        container.appendChild(wrapper);
     });
 }
 
 // ============================================================================
-// 5. CARREGAMENTO DOS DADOS (JSON)
+// 6. CARREGAMENTO DO JSON
 // ============================================================================
 const mainContainer = document.getElementById('org-container');
-const DATA_URL = 'https://raw.githubusercontent.com/segurancaeletronicabrasfort/Organograma/refs/heads/main/dados.json';
 
-fetch(DATA_URL)
-  .then(response => response.json())
-  .then(data => {
-      // Verifica se o JSON tem a estrutura nova (principal/apoio) ou antiga
-      const arvorePrincipal = data.principal ? data.principal : data;
+fetch('dados.json', { cache: 'no-store' })
+    .then(r => r.json())
+    .then(data => {
+        const arvore = data.principal ?? data;
+        mainContainer.innerHTML = '';
+        mainContainer.appendChild(createNodeElement(arvore));
 
-      if (mainContainer && arvorePrincipal) {
-          mainContainer.innerHTML = '';
-          mainContainer.appendChild(createNodeElement(arvorePrincipal));
-      }
-
-      // Se tiver a parte de apoio, renderiza embaixo
-      if (data.apoio) {
-          renderSupportGroups(data.apoio);
-      }
-  })
-  .catch(error => {
-      console.error('Erro ao carregar o JSON:', error);
-      if(mainContainer) mainContainer.innerHTML = '<p style="color:red; text-align:center;">Erro ao carregar dados.json</p>';
-  });
+        if (data.apoio) renderSupportGroups(data.apoio);
+    })
+    .catch(err => {
+        console.error(err);
+        mainContainer.innerHTML = '<p style="color:red;text-align:center;">Erro ao carregar dados.</p>';
+    });
 
 // ============================================================================
-// 6. SPLASH SCREEN & ADMIN
+// 7. SPLASH SCREEN
 // ============================================================================
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         const splash = document.getElementById('splash-screen');
-        if(splash) {
-            splash.classList.add('hidden');
-            setTimeout(() => splash.remove(), 1000);
-        }
+        splash?.classList.add('hidden');
+        setTimeout(() => splash?.remove(), 1000);
     }, 3000);
 });
 
-const btnAdmin = document.getElementById('btn-admin-access');
-if (btnAdmin) {
-    btnAdmin.addEventListener('click', () => {
-        const senha = prompt("Digite a senha de administrador:");
-        if (senha === "123497") {
-            window.location.href = "Admin/admin.html";
-        } else if (senha !== null) {
-            alert("Senha incorreta!");
-        }
-    });
-}
+// ============================================================================
+// 8. ADMIN
+// ============================================================================
+document.getElementById('btn-admin-access')?.addEventListener('click', () => {
+    const senha = prompt('Digite a senha de administrador:');
+    if (senha === '123') window.location.href = 'Admin/admin.html';
+    else if (senha !== null) alert('Senha incorreta!');
+});
