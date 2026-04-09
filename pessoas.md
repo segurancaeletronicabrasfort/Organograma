@@ -44,3 +44,7 @@ Vinicius
 <img width="409" height="409" alt="Vinicius" src="https://github.com/user-attachments/assets/e9038a7d-dccb-4025-a41b-fd29594982e3" />
 Cirlei
 <img width="409" height="409" alt="formato_fotos" src="https://github.com/user-attachments/assets/77723fb4-2ee2-4638-adcf-1a120abcd8ac" />
+Marco Antonio
+<img width="409" height="409" alt="marco_antonio" src="https://github.com/user-attachments/assets/80fbabd9-2df9-4736-b190-10dd79933e59" />
+
+
