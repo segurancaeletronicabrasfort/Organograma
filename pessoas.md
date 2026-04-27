@@ -50,6 +50,15 @@ Marco Antonio
 <img width="409" height="409" alt="marco_antonio" src="https://github.com/user-attachments/assets/80fbabd9-2df9-4736-b190-10dd79933e59" />
 Michael Douglas
 <img width="409" height="409" alt="michael_douglas" src="https://github.com/user-attachments/assets/730cbb0c-e69a-4b7e-868b-610080ef0dde" />
+Alessandro Brito 
+<img width="409" height="409" alt="Alessandro_Brito" src="https://github.com/user-attachments/assets/3a4ded37-74f5-42ca-8051-1872a1d07dba" />
+Stefany Souza
+<img width="409" height="409" alt="Stefany_Sousa" src="https://github.com/user-attachments/assets/b568ca94-428b-42b4-b0f4-e08192c01485" />
+Andreia Albuquerque
+<img width="409" height="409" alt="Andreia_albuquerque" src="https://github.com/user-attachments/assets/a7a1f98c-a9bb-421b-addd-e66f40ccea29" />
+
+
+
 
 
 
