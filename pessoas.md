@@ -48,5 +48,8 @@ Cirlei
 <img width="409" height="409" alt="formato_fotos" src="https://github.com/user-attachments/assets/77723fb4-2ee2-4638-adcf-1a120abcd8ac" />
 Marco Antonio
 <img width="409" height="409" alt="marco_antonio" src="https://github.com/user-attachments/assets/80fbabd9-2df9-4736-b190-10dd79933e59" />
+Michael Douglas
+<img width="409" height="409" alt="michael_douglas" src="https://github.com/user-attachments/assets/730cbb0c-e69a-4b7e-868b-610080ef0dde" />
+
 
 
