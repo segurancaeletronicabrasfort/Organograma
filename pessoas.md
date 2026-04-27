@@ -24,6 +24,8 @@ Lucas Matos
 <img width="409" height="409" alt="Lucas Matos" src="https://github.com/user-attachments/assets/e6d656dd-b400-4ab4-bf6f-55b2986aa197" />
 Lucas Sales
 <img width="409" height="409" alt="Lucas Sales" src="https://github.com/user-attachments/assets/75b5cd83-0968-4051-b758-255d0a39fbdf" />
+Lucas Batista 
+<img width="409" height="409" alt="Lucas_Batista" src="https://github.com/user-attachments/assets/f900f0c2-fac2-4e36-b86b-f00cf37690e4" />
 Luciano
 <img width="633" height="640" alt="Luciano" src="https://github.com/user-attachments/assets/98982e04-790a-4fd7-be29-29217af7ca32" />
 Luiz
