@@ -58,6 +58,9 @@ Andreia Albuquerque
 <img width="409" height="409" alt="Andreia_albuquerque" src="https://github.com/user-attachments/assets/a7a1f98c-a9bb-421b-addd-e66f40ccea29" />
 Luciano foto novo 
 <img width="409" height="409" alt="luciano_nascimento" src="https://github.com/user-attachments/assets/8c6f6733-310c-47c8-81fd-7ba309a00384" />
+Arthur de Almeida
+<img width="409" height="409" alt="arthur_felipe" src="https://github.com/user-attachments/assets/5c529c67-c2fd-4e58-9167-206a589ab384" />
+
 
 
 
