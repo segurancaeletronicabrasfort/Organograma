@@ -60,6 +60,18 @@ Luciano foto novo
 <img width="409" height="409" alt="luciano_nascimento" src="https://github.com/user-attachments/assets/8c6f6733-310c-47c8-81fd-7ba309a00384" />
 Arthur de Almeida
 <img width="409" height="409" alt="arthur_felipe" src="https://github.com/user-attachments/assets/5c529c67-c2fd-4e58-9167-206a589ab384" />
+Daniel
+<img width="409" height="409" alt="daniel_pinheiro" src="https://github.com/user-attachments/assets/e32e99b0-9f65-42d9-9de3-d659c5f0ca04" />
+Iago
+<img width="409" height="409" alt="iago_alves" src="https://github.com/user-attachments/assets/5d7ba589-091f-4b89-b526-3b99d7ab7c34" />
+Luiz jovem
+<img width="409" height="409" alt="luiz_henrique" src="https://github.com/user-attachments/assets/83722291-b9df-44d9-8f67-ccc12e30906d" />
+Matheus
+<img width="409" height="409" alt="matheus_silva" src="https://github.com/user-attachments/assets/dc49abc2-b125-4d23-a028-ac7321eff620" />
+Renato
+<img width="409" height="409" alt="renato_franca" src="https://github.com/user-attachments/assets/92cd00a2-85b7-4e98-a95f-75d0bd0b5f94" />
+
+
 
 
 
